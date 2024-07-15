@@ -5,10 +5,10 @@
   <title>PORTFOLIO</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <!--==============レイアウトを制御する独自のCSSを読み込み===============-->
-  <link href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css" rel="stylesheet">
-  <link href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/4-1-4/css/4-1-4.css" rel="stylesheet">
+  <link href="reset.css" rel="stylesheet">
   <link href="open.css" rel="stylesheet">
+  <link href="layout.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -19,15 +19,34 @@
     </div>
   </div>
 
+   <!-- ヘッダ ロゴとグローバルナビゲーション -->
+   <div id="container">    
+    <header id="header">
+        <h1 class="fadeDownTrigger"><a href="#"><img src="svg/text.svg" alt="PORTFOLIO"></a></h1>
+        
+        <div class="openbtn fadeDownTrigger"><span></span><span></span><span></span></div>
+        <nav id="g-nav">
+        <div id="g-nav-list">
+        <ul class="gnavi nav01d">
+        <li class="current fadeDownTrigger"><a href="#home">Home</a></li>
+        <li class="fadeDownTrigger"><a href="#about">ABOUT ME</a></li>
+        <li class="fadeDownTrigger"><a href="#works">WORKS</a></li>
+        <li class="fadeDownTrigger"><a href="#contact">CONTACT</a></li>
+        </ul>
+        </div>
+        </nav>
+        <div class="circle-bg"></div>
+    </header>
+        
+
   <main>
+
     <div id="container">
-      <p>ローディング後、この画面が見えます。</p>
+      
       <!--/container-->
     </div>
   </main>
-  <!--==============JQuery読み込み===============-->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/4-1-4/js/4-1-4.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+ <script src="script.js"></script> 
 </body>
 </html>
