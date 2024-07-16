@@ -79,6 +79,7 @@ nav ul li a:active {
 
 .mv-video{
     position:relative;
+    background-color: black;
 }
   
 .mv-video video {
