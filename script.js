@@ -18,6 +18,6 @@ $(window).on('load', function(){
 });
 
 // メニューの "HOME" リンクをクリックしたときにセッションストレージを設定
-$('nav a[href="home.html"]').on('click', function() {
+$('nav a[href="index.html"]').on('click', function() {
     sessionStorage.setItem('headerAnimationDisplayed', 'true');
 });
