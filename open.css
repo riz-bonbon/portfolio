@@ -1,10 +1,8 @@
 @charset "utf-8";
 
-/*========= LoadingのためのCSS ===============*/
 
-/* Loading背景画面設定　*/
+
 #splash {
-    /*fixedで全面に固定*/
   position: fixed;
   width: 100%;
   height: 100%;
@@ -14,7 +12,7 @@
   color:#fff;
 }
 
-/* Loading画像中央配置　*/
+
 #splash_logo {
   position: absolute;
   top: 50%;
@@ -22,12 +20,11 @@
   transform: translate(-50%, -50%);
 }
 
-/* Loading アイコンの大きさ設定　*/
+
 #splash_logo img {
   width:1000px;
 }
 
-/* fadeUpをするアイコンの動き */
 
 .fadeUp{
 animation-name: fadeUpAnime;
@@ -49,8 +46,6 @@ opacity: 0;
 }
 
 
-
-/*========= レイアウトのためのCSS ===============*/
 
 #container{
     width:100%;
