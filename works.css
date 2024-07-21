@@ -90,3 +90,36 @@ nav ul li a[href="works.html"]:focus {
     color: #d6fe0d;
     border-radius: 5px;
 }
+
+
+
+#wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #f4f4f4;
+}
+
+a {
+  color: #f4f4f4;
+}
+
+html, body {
+  height: 100%;
+}
+
+#particles-js { 
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: #181818;
+}
+
+#wrapper {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
