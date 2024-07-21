@@ -31,7 +31,6 @@ header {
     z-index: 1000;
 }
 
-
 header h1 img {
     width: 200px; 
     height: auto; 
@@ -91,12 +90,10 @@ nav ul li a[href="works.html"]:focus {
     border-radius: 5px;
 }
 
-
-
 #wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   text-align: center;
   color: #f4f4f4;
 }
@@ -122,4 +119,64 @@ html, body {
   z-index: 1;
   width: 100%;
   height: 100%;
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.works {
+  display: flex;
+  flex-direction: column; /* Change to column direction */
+  align-items: center;
+  padding: 20px;
+}
+
+.work-item {
+  background-color: #282828;
+  margin: 10px 0; /* Reduce vertical margin */
+  padding: 10px;
+  border-radius: 8px;
+  width: 90%; /* Adjust width to be smaller */
+  max-width: 600px; /* Set a maximum width */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start (left) */
+  text-align: left;
+  position: relative; /* Add relative positioning */
+}
+
+.work-item img {
+  width: 100%;
+  height: auto; /* Ensure images maintain aspect ratio */
+  border-radius: 8px;
+}
+
+.description {
+  margin-top: 10px;
+  color: #d2d2d2;
+  text-align: left; /* Ensure text alignment is left */
+  position: relative; /* Add relative positioning */
+  padding-bottom: 20px; /* Add padding to prevent overlap */
+}
+
+.description h2 {
+  font-size: 1.5em; /* Reduce font size */
+  margin-bottom: 5px; /* Reduce margin */
+}
+
+.description p {
+  font-size: 0.9em; /* Reduce font size */
+}
+
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .work-item {
+    width: 95%; /* Adjust to 95% width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .work-item {
+    width: 100%; /* Full width for very small screens */
+  }
 }
