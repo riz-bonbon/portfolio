@@ -105,11 +105,11 @@ nav ul li a[href="home.html"]:focus {
 @media screen and (max-width: 768px) {
     header {
         flex-direction: row; /* ヘッダーの要素を横並びに */
-        padding: 20px; /* ヘッダーのパディングをさらに小さく */
+        padding: 5px; /* ヘッダーのパディングをさらに小さく */
     }
 
     header h1 img {
-        width: 100px; /* ロゴのサイズをさらに小さく */
+        width: 80px; /* ロゴのサイズをさらに小さく */
         margin-bottom: 0;
     }
 
@@ -127,7 +127,7 @@ nav ul li a[href="home.html"]:focus {
     }
 
     nav ul li a {
-        font-size: 1em; /* フォントサイズをさらに小さく */
+        font-size: 1em; /* フォントサイズを小さく */
         padding: 5px;
     }
 
