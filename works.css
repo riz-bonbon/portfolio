@@ -14,11 +14,11 @@
 
 body {
     font-family: Arial, sans-serif;
+    padding-top: 165px; 
 }
 
 header {
     position: fixed;
-    position: relative;
     top: 0;
     width: 100%;
     background-color: rgb(0, 0, 0);
@@ -130,7 +130,8 @@ html, body {
 }
 
 .work-item {
-  background-color: #282828;
+  background-color: #353535;
+  text-shadow: #d6fe0d;
   margin: 10px 0; /* Reduce vertical margin */
   padding: 10px;
   border-radius: 8px;
@@ -151,7 +152,7 @@ html, body {
 
 .description {
   margin-top: 10px;
-  color: #d2d2d2;
+  color: #f3f3f3;
   text-align: left; /* Ensure text alignment is left */
   position: relative; /* Add relative positioning */
   padding-bottom: 20px; /* Add padding to prevent overlap */
