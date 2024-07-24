@@ -31,7 +31,6 @@ header {
     z-index: 1000;
 }
 
-
 header h1 img {
     width: 200px; 
     height: auto; 
@@ -77,28 +76,29 @@ nav ul li a:active {
     transform: scale(0.95);
 }
 
-.mv-video{
-    position:relative;
+.mv-video {
+    position: relative;
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - 165px); /* Adjust for header height */
 }
-  
+
 .mv-video video {
     width: 100%;
-    height: 100%
+    height: 100%;
+    object-fit: cover;
 }
 
-nav ul li a[href="home.html"] {
-    font-weight: bold;
-    background-color: #d6fe0d;
-    color: #333;
-    border-radius: 5px;
+.video-top, .video-bottom {
+    animation: video-animation 5s infinite alternate;
 }
 
-nav ul li a[href="home.html"]:hover,
-nav ul li a[href="home.html"]:focus {
-    background-color: #333;
-    color: #d6fe0d;
-    border-radius: 5px;
+@keyframes video-animation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
 }
 
 /* モバイル用レイアウト */
@@ -113,8 +113,9 @@ nav ul li a[href="home.html"]:focus {
         margin-bottom: 0;
     }
 
-    .hamburger-menu {
-        display: flex;
+    body {
+        font-family: Arial, sans-serif;
+        padding-top: 130px; 
     }
 
     nav ul {
@@ -158,5 +159,29 @@ nav ul li a[href="home.html"]:focus {
     .social-icons img {
         width: 30px;
         height: 30px;
+    }
+
+    .mv-video {
+        height: calc(100vh - 165px); /* Adjust for header height */
+    }
+
+    .mv-video video {
+        height: 33.3%;
+    }
+}
+
+/* PC用レイアウト */
+@media screen and (min-width: 769px) {
+    .mv-video {
+        height: calc(100vh - 165px); /* Adjust for header height */
+    }
+
+    .mv-video video {
+        display: none; /* PCではすべての動画を非表示に */
+    }
+
+    .mv-video .video-main {
+        display: block; /* メインの動画のみ表示 */
+        height: 100%; /* 全体の高さに調整 */
     }
 }
