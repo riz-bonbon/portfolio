@@ -1,17 +1,14 @@
 @charset "utf-8";
 
-
-
 #splash {
   position: fixed;
   width: 100%;
   height: 100%;
-  z-index: 2000;
-  background:#333;
-  text-align:center;
-  color:#fff;
+  z-index: 5000;
+  background: #02001e;
+  text-align: center;
+  color: #fff;
 }
-
 
 #splash_logo {
   position: absolute;
@@ -20,47 +17,57 @@
   transform: translate(-50%, -50%);
 }
 
-
 #splash_logo img {
-  width:1000px;
+  width: 1000px;
 }
 
-
-.fadeUp{
-animation-name: fadeUpAnime;
-animation-duration:1s;
-animation-fill-mode:forwards;
-opacity: 0;
+.fadeUp {
+  animation-name: fadeUpAnime;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
-@keyframes fadeUpAnime{
+@keyframes fadeUpAnime {
   from {
     opacity: 0;
-  transform: translateY(100px);
+    transform: translateY(100px);
   }
-
   to {
     opacity: 1;
-  transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
-
-
-#container{
-    width:100%;
-    height: 100vh;
-    background: #ccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+#container {
+  width: 100%;
+  height: 100vh;
+  background: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-a{
-    color: #333;
+a {
+  color: #333;
 }
 
-a:hover{
-     text-decoration: none;   
+a:hover {
+  text-decoration: none;
+}
+
+/* モバイル用のスタイル */
+@media only screen and (max-width: 600px) {
+  #splash_logo img {
+    width: 100%; /* ロゴのサイズを調整 */
+  }
+
+  #splash {
+    padding: 20px; /* スプラッシュ画面にパディングを追加 */
+  }
+
+  #container {
+    padding: 10px; /* コンテナにパディングを追加 */
+  }
 }

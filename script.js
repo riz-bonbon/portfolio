@@ -21,3 +21,4 @@ $(window).on('load', function(){
 $('nav a[href="index.html"]').on('click', function() {
     sessionStorage.setItem('headerAnimationDisplayed', 'true');
 });
+

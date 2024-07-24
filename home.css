@@ -93,6 +93,7 @@ nav ul li a:active {
 
 .video-top, .video-bottom {
     animation: video-animation 5s infinite alternate;
+    opacity: 0.2;
 }
 
 @keyframes video-animation {
@@ -168,6 +169,7 @@ nav ul li a:active {
     .mv-video video {
         height: 33.3%;
     }
+
 }
 
 /* PC用レイアウト */
