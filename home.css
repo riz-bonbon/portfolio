@@ -97,15 +97,15 @@ nav ul li a:focus::after {
     transform: scaleX(1);
 }
 
-nav ul li a[href="about.html"] {
+nav ul li a[href="home.html"] {
     font-weight: bold;
     background-color: #d6fe0d;
     color: #333;
     border-radius: 5px;
 }
 
-nav ul li a[href="about.html"]:hover,
-nav ul li a[href="about.html"]:focus {
+nav ul li a[href="home.html"]:hover,
+nav ul li a[href="home.html"]:focus {
     background-color: #333;
     color: #d6fe0d;
     border-radius: 5px;
