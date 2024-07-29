@@ -260,3 +260,16 @@ html, body {
         height: 30px;
     }
 }
+/* 初期状態で透明にし、少し下にずらす */
+.work-item {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95); /* 少し縮小 */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  /* スクロールで表示された時の状態 */
+  .work-item.visible {
+    opacity: 1;
+    transform: translateY(0) scale(1); /* 元の大きさに */
+  }
+  
